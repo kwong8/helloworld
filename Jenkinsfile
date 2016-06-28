@@ -2,8 +2,6 @@
  node ('oel7_s1-26bdfa2e') {
   stage 'Build and Test!!'
   checkout scm
-  sh 'mvn clean package'
-  stage 'Build for testing'
   sh 'mvn -f pom.xml \
       -s /opt/apache-maven-3.1.0/conf/settings.xml \
       -gs /opt/apache-maven-3.1.0/conf/settings_global_jenkins.xml \
