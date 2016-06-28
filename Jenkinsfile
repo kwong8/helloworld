@@ -1,5 +1,5 @@
 
- node ('oel7_s*') {
+ node ('oel7_s1') {
   stage 'Build and Test!!'
   env.PATH = "${tool 'Maven 3'}/bin:${env.PATH}"
   checkout scm
